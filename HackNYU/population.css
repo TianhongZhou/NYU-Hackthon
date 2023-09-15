@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.comn/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+header h1
+{
+    position: absolute;
+    top: 100px;
+    left: 505px;
+    font-size: 5em;
+    color: #fff;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section img#population1
+{
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 2;
+    display: none;
+} 
+section img#population4
+{
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 2;
+    display: none;
+} 
+section img#population8
+{
+    position: absolute;
+    top: 375px;
+    left: 600px;
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 2;
+    display: none;
+} 
+section img#population32
+{
+    position: absolute;
+    top: 370px;
+    left: 550px;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 2;
+    display: none;
+} 
+section img#enter
+{
+    position: absolute;
+    top: 200px;
+    left: 480px;
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    pointer-events: none;
+    z-index: 2;
+} 
+.countrydropbtn 
+{
+    background-color: #648afe;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10em;
+}
+.countrydropdown 
+{
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    display: inline-block;
+    z-index: 2;
+}
+.countrydropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.countrydropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.countrydropdown-content a:hover 
+{
+    background-color: #f1f1f1
+}
+.countrydropdown:hover .dropdown-content 
+{
+    display: block;
+}
+.countrydropdown:hover .dropbtn 
+{
+    background-color: #648afe;
+}
+.numberinput 
+{
+    display: block;
+    position: absolute;
+    top: 475px;
+    left: 205px;
+    color: #fff;
+    font-size: 20px;
+}
+.numberinputlabel
+{
+    margin: .4rem 0;
+    z-index: 100;
+    position: absolute;
+    left: 200px;
+    top: 510px;
+    border-radius: 10em;
+    outline-style: none ;
+    border: transparent; 
+    padding: 9px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Microsoft soft";
+}
+.output 
+{
+    display: block;
+    position: absolute;
+    top: 700px;
+    left: 205px;
+    color: #fff;
+    font-size: 25px;
+}
+.string
+{
+    position: absolute;
+    left: 210px;
+    top: 745px;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Microsoft soft";
+    z-index: 1000;
+    color: #fff;
+    display: block;
+}
+a#show
+{
+    background-color: #648afe;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10em;
+    position: absolute;
+    left: 360px;
+    top: 513px;
+    text-decoration: none;
+    z-index: 100;
+}
+p
+{
+    position: absolute;
+    left: 1250px;
+    right: 100px;
+    top: 400px;
+    font-size: 24px;
+    color: #fff;
+    display: none;
+}

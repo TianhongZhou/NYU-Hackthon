@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.comn/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+header h1
+{
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    font-size: 3em;
+    color: #fff;
+}
+.card
+{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5), 0 20px 100px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+.card:hover
+{
+    transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5), 0 10px 100px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+.card:before
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #1a1055;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+.card:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #7379d1;
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+.card .imgBox
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: 1s;
+    z-index: 10;
+}
+.card:hover .imgBox
+{
+    transform: rotateY(-135deg);
+}
+.card .imgBox img#water
+{
+    width: 400px;
+    height: 300px;
+}
+.card .details
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 9;
+    font-size: 18px;
+}
+.card2
+{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 400px;
+    height: 300px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset -300px 0 50px rgba(0, 0, 0, 0.5), 0 -20px 100px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+.card2:hover
+{
+    transform: translate(-50%, -50%) perspective(2000px) rotate(10deg);
+    box-shadow: inset -20px 0 50px rgba(0, 0, 0, 0.5), 0 -10px 100px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+}
+.card2:before
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #1a1055;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+.card2:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 5px;
+    height: 100%;
+    background: #7379d1;
+    transform-origin: right;
+    transform: skewY(-45deg);
+}
+.card2 .imgBox2
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: right;
+    transition: 1s;
+    z-index: 10;
+}
+.card2:hover .imgBox2
+{
+    transform: rotateY(135deg);
+}
+.card2 .imgBox2 img#forest
+{
+    width: 400px;
+    height: 300px;
+}
+.card2 .details2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 16px;
+    z-index: 9;
+    font-size: 18px;
+}
+a#explore
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 80%;
+    left: 47%;
+}
+a#explore:hover,
+a#explore.active
+{
+    background: #fff;
+    color: #2b1055;
+}

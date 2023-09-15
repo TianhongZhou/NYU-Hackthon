@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Global Warming Cycle</title>
+        <link rel="stylesheet" type="text/css" href="simulation.css">
+    </head>
+    <body>
+        <header>
+            <a class="logo">TZEZ</a>
+            <ul>
+                <li><a href="main.html">Back Home</a></li>
+                <li><a href="airpollution.html">Air Pollution</a></li>
+                <li><a href="waterforest.html">Water Contamination</a></li>
+                <li><a href="waterforest.html">Reduced Forest Resources</a></li>
+            </ul>
+            <h1>Global Warming Cycle</h1>
+            <h2>Click the arrows!</h2>
+        </header>
+        <section>
+            <img src="simulation.png" id="simulation">
+            <a href="#"><img src="arrowCtR.png" id="arrowCtR" onclick=arrowCtR()></a>
+            <a href="#"><img src="arrowFtR.png" id="arrowFtR" onclick=arrowCtR()></a>
+            <a href="#"><img src="arrowFtW.png" id="arrowFtW" onclick=arrowFtW()></a>
+            <a href="#"><img src="arrowRtT.png" id="arrowRtT" onclick=arrowRtT()></a>
+            <a href="#"><img src="arrowWtR.png" id="arrowWtR" onclick=arrowWtR()></a>
+        </section>
+        <p id="arrowCtRtext">Emissions of polluting gases<br> will generate acid rain.</p>
+        <p id="arrowFtWtext">Industrial factories will emit<br> waste gases into water bodies.</p>
+        <p id="arrowRtTtext">Acid rain will cause land desertification,<br> which reduces the plants on Earth.</p>
+        <p id="arrowWtRtext">Water vaporized from contaminated<br> water bodies will enter the atmosphere,<br> further speeding up global warming.</p>
+        <script>
+            function arrowCtR() {
+                var arrowCtR = document.getElementById("arrowCtRtext");
+                if (arrowCtR.style.display == "block") {
+                    arrowCtR.style.display = "none";
+                } else {
+                    arrowCtR.style.display = "block";
+                }
+            }
+            function arrowFtW() {
+                var arrowFtW = document.getElementById("arrowFtWtext");
+                if (arrowFtW.style.display == "block") {
+                    arrowFtW.style.display = "none";
+                } else {
+                    arrowFtW.style.display = "block";
+                }
+            }
+            function arrowRtT() {
+                var arrowRtT = document.getElementById("arrowRtTtext");
+                if (arrowRtT.style.display == "block") {
+                    arrowRtT.style.display = "none";
+                } else {
+                    arrowRtT.style.display = "block";
+                }
+            }
+            function arrowWtR() {
+                var arrowWtR = document.getElementById("arrowWtRtext");
+                if (arrowWtR.style.display == "block") {
+                    arrowWtR.style.display = "none";
+                } else {
+                    arrowWtR.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.comn/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+header h1
+{
+    position: absolute;
+    top: 100px;
+    left: 605px;
+    font-size: 5em;
+    color: #fff;
+}
+
+.wrapper{
+    display: grid;
+    margin: 200px 90px auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin-top: 300px;
+}
+.wrapper .box{
+    width: 350px;
+    margin: 0 auto;
+    padding: 5%;
+    position: relative;
+    perspective: 1000px;
+}
+.wrapper .box .front-face{
+    background: #859bca;
+    height: 290px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.box .front-face .icon{
+    height: 80px;
+}
+.box .front-face .icon i{
+    font-size: 65px;
+}
+.box .front-face span,
+.box .back-face span{
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .front-face .icon i,
+.box .front-face span{
+    background: linear-gradient(-135deg, #153477, #7584ca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.box .back-face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 290px;
+    width: 100%;
+    padding: 30px;
+    color: #cccccc;
+    opacity: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    background: linear-gradient(-135deg, #7597de, #4158d0);
+    transform: translateY(110px) rotateX(-90deg);
+    transition: all 0.5s ease;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.box:hover .back-face{
+    opacity: 1;
+    transform: rotateX(0deg);
+}
+.box:hover .front-face{
+    opacity: 0;
+    transform: translateY(-110px) rotateX(90deg);
+}
+.box .back-face p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.box .front-face img#industrial
+{
+    width: 75%;
+    height: 75%;
+    position: relative;
+    left: 35px;
+    bottom: 30px;
+}
+.box .front-face img#fuel
+{
+    width: 85%;
+    height: 85%;
+    position: relative;
+    left: 15px;
+    bottom: 25px;
+}
+.box .front-face img#automobile
+{
+    position: relative;
+    right: 10px;
+    bottom: 30px;
+}
+a#explore
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 80%;
+    left: 47%;
+}
+a#explore:hover,
+a#explore.active
+{
+    background: #fff;
+    color: #2b1055;
+}
